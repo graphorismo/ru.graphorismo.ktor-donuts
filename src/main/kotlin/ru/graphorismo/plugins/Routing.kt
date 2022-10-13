@@ -6,16 +6,13 @@ import io.ktor.server.http.content.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.request.*
+import ru.graphorismo.routes.randomDonut
 
 fun Application.configureRouting() {
-    
-
     routing {
-        get("/") {
-            call.respondText("Hello World!")
-        }
+        randomDonut()
         // Static plugin. Try to access `/static/index.html`
-        static("/static") {
+        static {
             resources("static")
         }
     }
