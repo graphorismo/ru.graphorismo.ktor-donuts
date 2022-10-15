@@ -7,9 +7,9 @@ import io.ktor.server.routing.*
 import ru.graphorismo.model.Donut
 
 // For browser test
-private const val BASE_URL = "http://localhost:8100"
+//private const val BASE_URL = "http://localhost:8100"
 // For android emulator
-//private const val BASE_URL = "http://10.0.2.2:8100"
+private const val BASE_URL = "http://10.0.2.2:8100"
 
 private val donuts =
     listOf(
